@@ -108,8 +108,7 @@
                 <div class="sticky top-24 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-sm max-h-[80vh] overflow-y-auto custom-scrollbar">
                     <p class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-3 px-2">Navegação do POP</p>
                     <nav class="space-y-1" id="sidebar-nav">
-                        <!-- Links serão preenchidos estaticamente e marcados dinamicamente ao scroll -->
-                        <a href="#controle-documental" class="sidebar-link flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg text-brand-600 bg-brand-50 dark:text-brand-400 dark:bg-brand-950/40 border-l-2 border-brand-500">
+                        <a href="#controle-documental" class="sidebar-link flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg text-brand-600 bg-brand-5: dark:text-brand-400 dark:bg-brand-955/40 border-l-2 border-brand-500">
                             <i data-lucide="file-text" class="h-4 w-4"></i> Controle Documental
                         </a>
                         <a href="#objetivo" class="sidebar-link flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-lg transition-colors">
@@ -583,8 +582,8 @@
                                 <li>Confirmar vencimento;</li>
                                 <li>Garantir envio correto das evidências;</li>
                                 <li>Garantir veracidade das informações;</li>
-                                <li>Garantir a ativação do app Watch, a não ativação gerará pendência;</li>
-                                <li>Garantir a abertura da indicação comercial (obrigatório abertura de indicação comercial, caso contrário será dado como pendência).</li>
+                                <li class="font-semibold text-brand-600 dark:text-brand-400">Garantir a ativação do app Watch (a não ativação gerará pendência);</li>
+                                <li class="font-semibold text-brand-600 dark:text-brand-400">Nas vendas de indicação comercial, abrir o ticket de indicação (obrigatória a abertura, caso contrário será pendência).</li>
                             </ul>
                         </div>
 
@@ -599,15 +598,15 @@
                                 <li>Conferir débitos;</li>
                                 <li>Conferir vínculos familiares;</li>
                                 <li>Conferir viabilidade;</li>
+                                <li class="font-semibold text-emerald-600 dark:text-emerald-400">Conferir ativação do app Watch;</li>
+                                <li class="font-semibold text-emerald-600 dark:text-emerald-400">Conferir a abertura da indicação de forma correta;</li>
                                 <li>Validar LGPD;</li>
                                 <li>Validar contrato;</li>
                                 <li>Conferir negociação;</li>
                                 <li>Conferir gravações;</li>
                                 <li>Confirmar dados com cliente;</li>
                                 <li>Pendenciar inconsistências;</li>
-                                <li>Aprovar ou solicitar ajuste de cadastro de vendas;</li>
-                                <li>Verificar a ativação do Watch;</li>
-                                <li>Verificar a abertura da indicação comercial (é obrigatório que seja aberto a indicação comercial, caso contrário será dado como pendência).</li>
+                                <li>Aprovar ou solicitar ajuste de cadastro de vendas.</li>
                             </ul>
                         </div>
 
@@ -627,7 +626,7 @@
                             <h3 class="font-bold text-lg text-rose-600 dark:text-rose-400 border-b border-slate-100 dark:border-slate-700 pb-2 mb-2">7.4 Equipe Técnica</h3>
                             <ul class="list-disc list-inside text-sm space-y-1 text-slate-700 dark:text-slate-300">
                                 <li>Realizar instalação;</li>
-                                <li>Informar ausência de viabilidade;</li>
+                                <li class="font-semibold text-rose-600 dark:text-rose-400">Informar ausência de viabilidade e registrar no sistema;</li>
                                 <li>Cancelar instalação apenas em caso de inviabilidade técnica.</li>
                             </ul>
                         </div>
@@ -639,12 +638,19 @@
                     <h2 class="text-2xl font-bold flex items-center gap-2 mb-4">
                         <span class="text-brand-500 font-extrabold text-3xl">8.</span> PLANOS COMERCIAIS
                     </h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-4">
                         <!-- 200MB -->
                         <div class="p-4 border border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 rounded-xl text-center relative overflow-hidden group hover:shadow-md transition-shadow">
                             <span class="absolute top-0 right-0 bg-brand-500 text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-bl-lg">Internet</span>
                             <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-2">200MB</h3>
                             <p class="text-2xl font-extrabold text-brand-600 dark:text-brand-400 mt-4">R$ 79,90</p>
+                            <p class="text-xs text-slate-400 mt-1">mensal</p>
+                        </div>
+                        <!-- 300MB -->
+                        <div class="p-4 border border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 rounded-xl text-center relative overflow-hidden group hover:shadow-md transition-shadow">
+                            <span class="absolute top-0 right-0 bg-sky-500 text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-bl-lg">Novo</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-2">300 MB</h3>
+                            <p class="text-2xl font-extrabold text-brand-600 dark:text-brand-400 mt-4">R$ 89,90</p>
                             <p class="text-xs text-slate-400 mt-1">mensal</p>
                         </div>
                         <!-- 500MB -->
@@ -716,8 +722,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-4 p-3 bg-brand-50 dark:bg-brand-950/20 border-l-4 border-brand-500 rounded text-xs text-slate-700 dark:text-slate-300">
-                        <strong>OBS:</strong> O cliente que desejar ficar isento da fidelidade contratual poderá pagar uma taxa no valor de R$ 100,00 para não ter a fidelização.
+                    <div class="mt-4 p-3 bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-500 rounded text-xs text-slate-700 dark:text-slate-300">
+                        <strong>OBS:</strong> Caso o cliente não deseje a fidelidade de 12 meses, poderá ser pago uma taxa no valor de R$ 100,00 para a não fidelização.
                     </div>
                 </section>
 
@@ -729,13 +735,14 @@
 
                     <h3 class="text-lg font-bold mt-4 mb-3 flex items-center gap-1.5"><i data-lucide="file-check-2" class="h-4 w-4"></i> 10.1 Documentos Obrigatórios</h3>
                     <p class="mb-3">O cadastro do cliente somente poderá prosseguir para agendamento mediante o envio obrigatório de:</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-sm">
                         <div class="p-3 bg-red-50 dark:bg-slate-900 border-l-4 border-red-500 rounded font-medium">Documento oficial com foto</div>
                         <div class="p-3 bg-red-50 dark:bg-slate-900 border-l-4 border-red-500 rounded font-medium">CPF válido</div>
                         <div class="p-3 bg-red-50 dark:bg-slate-900 border-l-4 border-red-500 rounded font-medium">Comprovante de residência oficial</div>
                         <div class="p-3 bg-red-50 dark:bg-slate-900 border-l-4 border-red-500 rounded font-medium">Selfie do titular segurando o documento</div>
                         <div class="p-3 bg-red-50 dark:bg-slate-900 border-l-4 border-red-500 rounded font-medium">Dois contatos ativos para ligação e/ou WhatsApp</div>
                         <div class="p-3 bg-red-50 dark:bg-slate-900 border-l-4 border-red-500 rounded font-medium">E-mail válido</div>
+                        <div class="p-3 bg-amber-50 dark:bg-slate-900 border-l-4 border-amber-500 rounded font-medium col-span-1 sm:col-span-2">Colocar a localização do cliente no ticket para a auditoria verificar viabilidade</div>
                     </div>
 
                     <h3 class="text-lg font-bold mt-6 mb-3 flex items-center gap-1.5"><i data-lucide="check" class="h-4 w-4"></i> 10.2 Documentos Físicos e Digitais Aceitos</h3>
@@ -856,7 +863,7 @@
                         <div class="p-2 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-700 rounded">Boleto de condomínio</div>
                         <div class="p-2 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-700 rounded">Carnê funerário</div>
                     </div>
-                    <p class="text-xs text-rose-500 font-semibold italic">OBS: Gerarão pendência imediata documentos ilegíveis ou que não estejam inseridos na lista acima.</p>
+                    <p class="text-xs text-rose-500 font-semibold italic">OBS: Gerarão pendência os documentos que estiverem ilegíveis ou não estiverem dentro da lista dos documentos aceitos.</p>
 
                     <h3 class="text-lg font-bold mt-6 mb-3 flex items-center gap-1.5"><i data-lucide="map-pin-off" class="h-4 w-4"></i> 12.2 Fluxo para Clientes Sem Comprovante</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mt-2">
@@ -908,10 +915,13 @@
                             <h3 class="font-bold flex items-center gap-1"><i data-lucide="phone-off" class="h-4 w-4"></i> 13.3 Critérios de Pendência</h3>
                             <ul class="list-disc list-inside mt-2 space-y-1 text-xs text-rose-500">
                                 <li>Qualquer número inexistente;</li>
-                                <li>Números que caem em caixa postal;</li>
-                                <li>WhatsApp sem foto ou identificação mínima;</li>
+                                <li class="font-bold">Caixa postal sem conseguir contato com o cliente por ligação;</li>
+                                <li class="font-bold">Sem contato por WhatsApp;</li>
                                 <li>Ausência completa de resposta nas tentativas;</li>
-                                <li>Dígito incorreto ou formato inválido.</li>
+                                <li>Dígito incorreto ou formato inválido;</li>
+                                <li class="font-bold">Números repetidos no cadastro;</li>
+                                <li class="font-bold">Não ativação do Watch;</li>
+                                <li class="font-bold">Não abertura de indicação comercial.</li>
                             </ul>
                         </div>
                     </div>
@@ -957,6 +967,7 @@
                         <div class="flex flex-wrap gap-2 text-xs">
                             <span class="px-2.5 py-1 bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300 rounded-full font-semibold">Pai</span>
                             <span class="px-2.5 py-1 bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300 rounded-full font-semibold">Mãe</span>
+                            <span class="px-2.5 py-1 bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300 rounded-full font-semibold">Avós</span>
                             <span class="px-2.5 py-1 bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300 rounded-full font-semibold">Irmão/Irmã</span>
                             <span class="px-2.5 py-1 bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300 rounded-full font-semibold">Tio/Tia</span>
                             <span class="px-2.5 py-1 bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300 rounded-full font-semibold">Cônjuge</span>
@@ -989,13 +1000,13 @@
                             <p class="mb-2 text-xs">Instalações que estão autorizadas para prosseguir:</p>
                             <ul class="list-disc list-inside text-xs space-y-1">
                                 <li>Em blocos ou torres distintas de um mesmo condomínio;</li>
-                                <li>Em vias públicas ou ruas completamente distintas;</li>
+                                <li>Em ruas diferentes;</li>
                                 <li>Em locais sem qualquer indício ou caracterização de compartilhamento de link.</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="mt-4 p-3 bg-slate-50 dark:bg-slate-900 border-l-4 border-amber-500 rounded text-xs text-slate-700 dark:text-slate-300">
-                        <strong>OBS:</strong> Essas regras se referem aos casos em que forem identificados parentesco em débito ou com extravio de equipamentos residindo ao lado, acima ou no mesmo endereço.
+                    <div class="mt-4 p-3 bg-slate-50 dark:bg-slate-900 border-l-4 border-amber-500 rounded text-xs text-slate-700 dark:text-slate-300 font-medium">
+                        <strong>OBS:</strong> Esses casos se aplicam especificamente ao encontro de débitos no endereço vizinho ou extravio de aparelhos havendo vínculo familiar.
                     </div>
                 </section>
 
@@ -1056,42 +1067,44 @@
                     <h2 class="text-2xl font-bold flex items-center gap-2 mb-4">
                         <span class="text-brand-500 font-extrabold text-3xl">20.</span> AUDITORIA OFICIAL
                     </h2>
-                    <p class="mb-4 text-sm">O time de auditoria oficial da Vistel Telecom validará detalhadamente os 15 tópicos cadastrais:</p>
+                    <p class="mb-4 text-sm">O time de auditoria oficial da Vistel Telecom validará detalhadamente os tópicos cadastrais:</p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">1. Cadastro no MK</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">2. Documentação do Cliente</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">3. Assinatura do Contrato</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">4. Registros de Conversas</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">5. Gravações de Ligações</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">6. Viabilidade Técnica</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">7. Endereço Completo</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">8. Histórico de Débitos</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">9. Vínculos Familiares</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">10. Validade dos Contatos</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">11. Aceite do Termo</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">12. Compliance com LGPD</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">13. Valores e Campanhas</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">14. Cláusula de Fidelização</div>
-                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold col-span-1 sm:col-span-3">15. Análise Global de Risco</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Cadastro</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Documentação</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Contrato</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Conversas</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Ligações</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Viabilidade</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Endereço</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Débitos</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Vínculo familiar</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Contatos</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Aceite</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">LGPD</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold">Valores</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold text-brand-600 dark:text-brand-400">Ativação do Watch</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold text-brand-600 dark:text-brand-400">Abertura de indicação comercial</div>
+                        <div class="p-2.5 bg-brand-50 dark:bg-brand-950/20 rounded border-l-2 border-brand-500 flex items-center gap-1.5 font-semibold col-span-1 sm:col-span-3">Fidelização</div>
                     </div>
                 </section>
 
-                <!-- 21. CONTATO COM CLIENTE -->
+                <!-- 21. CONTATO COM CLIENTE E VALIDAÇÃO -->
                 <section id="contato-cliente" class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm scroll-mt-24">
                     <h2 class="text-2xl font-bold flex items-center gap-2 mb-4">
-                        <span class="text-brand-500 font-extrabold text-3xl">21.</span> CONTATO COM CLIENTE
+                        <span class="text-brand-500 font-extrabold text-3xl">21.</span> CONTATO COM CLIENTE E VALIDAÇÃO
                     </h2>
                     <p class="mb-4 text-sm">Durante a etapa de auditoria e validação da venda, a equipe de Auditoria deve contatar diretamente os contatos:</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                         <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg space-y-2">
                             <h3 class="font-bold text-brand-600 dark:text-brand-400">Processo de Contato:</h3>
                             <ul class="list-disc list-inside space-y-1 text-xs">
-                                <li>Contatar obrigatoriamente os dois números fornecidos;</li>
-                                <li>Confirmar de forma incontestável a identidade do titular da linha/cadastro;</li>
-                                <li>Confirmar se possui plena ciência da contratação do serviço de telecomunicação;</li>
-                                <li>Confirmar o valor integral da mensalidade e da taxa proporcional do ciclo;</li>
-                                <li>Assegurar a confirmação de fidelidade (12 meses) e comodato;</li>
-                                <li>Agendar/Informar a data correta do primeiro vencimento do boleto bancário.</li>
+                                <li>Contatar os dois números cadastrados;</li>
+                                <li>Confirmar identidade do titular;</li>
+                                <li>Confirmar ciência da contratação;</li>
+                                <li>Confirmar valor da mensalidade e do proporcional;</li>
+                                <li>Confirmar fidelidade;</li>
+                                <li>Confirmar equipamentos;</li>
+                                <li>Confirmar primeiro vencimento.</li>
                             </ul>
                         </div>
                         <div class="p-4 bg-indigo-50/30 dark:bg-indigo-950/10 border border-indigo-200 dark:border-indigo-900 rounded-lg flex flex-col justify-between">
@@ -1106,6 +1119,16 @@
                             </a>
                         </div>
                     </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 bg-slate-100 dark:bg-slate-900 p-4 rounded-xl text-xs space-y-2 sm:space-y-0">
+                        <div class="border-l-2 border-brand-500 pl-3">
+                            <strong>OBS 1: Validação</strong>
+                            <p class="text-slate-500 dark:text-slate-400 mt-1">A validação é realizada pela auditoria do que foi enviado pelo time comercial. O contato por telefone e/ou whatsapp somente será realizado com os dois números de contato para validar a existência e contato com os números.</p>
+                        </div>
+                        <div class="border-l-2 border-brand-500 pl-3">
+                            <strong>OBS 2: Clientes Sem Smartphone</strong>
+                            <p class="text-slate-500 dark:text-slate-400 mt-1">Em casos em que o cliente não possua smartphone que tenha acesso ao whatsapp, o aceite de contrato deverá ser feito por meio de ligação da auditoria via DRA gerando registro e protocolo.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 22. CRITÉRIOS DE PENDÊNCIA -->
@@ -1114,17 +1137,22 @@
                         <span class="text-brand-500 font-extrabold text-3xl">22.</span> CRITÉRIOS DE PENDÊNCIA
                     </h2>
                     <p class="mb-3 text-sm">Irregularidades que forçam a classificação da venda na fila como "PENDENTE":</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
                         <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Documentação incorreta</div>
                         <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Cadastro incorreto</div>
-                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Falta de dados/Duplicidade</div>
+                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Informações faltando ou duplicadas</div>
                         <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Divergência financeira</div>
                         <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Proporcional incorreto</div>
                         <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Dados inconsistentes</div>
-                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Contato inválido/Inativo</div>
-                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Endereço divergente</div>
-                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Selfie sem legibilidade</div>
+                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Contato inválido</div>
+                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Endereço inconsistente</div>
+                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Selfie ilegível</div>
+                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium text-amber-600">Ausência de ativação Watch</div>
+                        <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium text-amber-600">Ausência de abertura da indicação comercial</div>
                         <div class="p-3 border border-amber-200 dark:border-amber-900 bg-amber-50/10 rounded font-medium">Evidência insuficiente</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-slate-50 dark:bg-slate-900 border-l-4 border-amber-500 rounded text-xs text-slate-700 dark:text-slate-300">
+                        <strong>OBS:</strong> No caso do proporcional incorreto, se o print anexado no atendimento estiver com o valor correto de proporcional e no ticket estiver errado, será colocado como pendência mas para uma maior agilidade na instalação será corrigido na auditoria.
                     </div>
                 </section>
 
@@ -1206,7 +1234,11 @@
                             </thead>
                             <tbody class="divide-y divide-slate-100 dark:divide-slate-700 text-sm">
                                 <tr>
-                                    <td class="p-3 font-semibold">Segunda a Sábado</td>
+                                    <td class="p-3 font-semibold">Segunda a Sexta</td>
+                                    <td class="p-3 font-medium text-brand-600 dark:text-brand-400">08:00 às 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-semibold">Sábado</td>
                                     <td class="p-3 font-medium text-brand-600 dark:text-brand-400">08:00 às 17:00</td>
                                 </tr>
                             </tbody>
@@ -1216,7 +1248,8 @@
                         <strong>Vendas realizadas fora do expediente operacional:</strong>
                         <ul class="list-disc list-inside mt-1 space-y-0.5">
                             <li>Permanecerão retidas na fila do MK Solutions;</li>
-                            <li>Serão priorizadas e analisadas no início do expediente do próximo dia útil comercial.</li>
+                            <li>Serão priorizadas e analisadas no início do expediente do próximo dia útil comercial;</li>
+                            <li class="font-semibold text-brand-600 dark:text-brand-400">Terão prioridade no dia seguinte.</li>
                         </ul>
                     </div>
                 </section>
@@ -1269,7 +1302,8 @@
                             <li class="font-semibold">Omitir de qualquer forma a obrigatoriedade de fidelização de 12 meses;</li>
                             <li class="font-semibold">Omitir a existência de taxas de instalação e taxas proporcionais;</li>
                             <li class="font-semibold">Informar velocidades de planos que sejam divergentes da oferta real;</li>
-                            <li class="font-semibold">Informar condições especiais sem aprovação documental formal da empresa.</li>
+                            <li class="font-semibold">Informar condições especiais sem aprovação documental formal da empresa;</li>
+                            <li class="font-semibold text-rose-600 dark:text-rose-400">Prometer prazo de instalação fora do SLA de 72 horas (salvo os casos alinhados e autorizados pela supervisão/gestão).</li>
                         </ul>
                     </div>
                 </section>
@@ -1298,7 +1332,7 @@
                     <h2 class="text-2xl font-bold flex items-center gap-2 mb-4">
                         <span class="text-brand-500 font-extrabold text-3xl">30.</span> INDICADORES OPERACIONAIS
                     </h2>
-                    <p class="mb-4 text-sm">Para acompanhamento estratégico de performance da área de Auditoria Comercial, serão mensurados:</p>
+                    <p class="mb-4 text-sm">Para acompanhamento estratégico de performance, <strong>a auditoria e o CS acompanharão:</strong></p>
                     <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center text-xs">
                         <div class="p-3 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-700 rounded-xl">
                             <h4 class="font-bold text-brand-600 dark:text-brand-400">Cancelamento FPD</h4>
@@ -1349,7 +1383,7 @@
                             <li>Reanálise obrigatória e suspensão temporária da venda;</li>
                             <li><strong class="text-rose-600 dark:text-rose-400">Vendedor perder a venda</strong> (sendo obrigatório o envio de informe detalhado para a diretoria);</li>
                             <li>Revisão total e imediata dos processos operacionais praticados;</li>
-                            <li>Aplicação de medidas administrativas estritas definidas pela gestão geral.</li>
+                            <li class="font-semibold text-rose-600 dark:text-rose-400">Medidas administrativas definidas pelas diretrizes internas da empresa e conforme regulamento da CLT.</li>
                         </ul>
                     </div>
                 </section>
@@ -1372,7 +1406,7 @@
                         <h2 class="text-2xl font-bold flex items-center gap-2">
                             <span class="text-brand-500 font-extrabold text-3xl">34.</span> ANEXOS & INTERATIVIDADE
                         </h2>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ferramentas de simulação e checklists práticos com base nas tabelas oficiais do POP.</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ferramentas de simulação, checklist da auditoria e formulário comercial estilo Google Forms.</p>
                     </div>
 
                     <!-- ANEXO I – CHECKLIST DE AUDITORIA INTERATIVO -->
@@ -1383,7 +1417,7 @@
                                 <i data-lucide="rotate-ccw" class="h-3.5 w-3.5"></i> Resetar Checklist
                             </button>
                         </div>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Use este checklist interativo na tela antes de validar as vendas.</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Use este checklist interativo na tela antes de validar as propostas.</p>
                         
                         <!-- Progresso do checklist -->
                         <div class="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 mb-4 overflow-hidden">
@@ -1440,13 +1474,110 @@
                                 <input type="checkbox" onchange="updateProgress()" class="rounded text-brand-500 focus:ring-brand-500 h-4.5 w-4.5">
                                 <span class="text-xs font-semibold">Proporcional correto</span>
                             </label>
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 cursor-pointer transition-colors border border-slate-100 dark:border-slate-800">
+                                <input type="checkbox" onchange="updateProgress()" class="rounded text-brand-500 focus:ring-brand-500 h-4.5 w-4.5">
+                                <span class="text-xs font-semibold text-brand-600 dark:text-brand-400">Ativação Watch</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 cursor-pointer transition-colors border border-slate-100 dark:border-slate-800">
+                                <input type="checkbox" onchange="updateProgress()" class="rounded text-brand-500 focus:ring-brand-500 h-4.5 w-4.5">
+                                <span class="text-xs font-semibold text-brand-600 dark:text-brand-400">Abertura da Indicação Comercial</span>
+                            </label>
                         </div>
                     </div>
 
-                    <!-- ANEXO II – ROTEIRO DE CONFIRMAÇÃO COM RECURSO DE COPIAR -->
+                    <!-- ANEXO II – FORMULÁRIO COMERCIAL (ESTILO GOOGLE FORMS) -->
+                    <div id="anexo-comercial-form" class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-t-8 border-brand-500 shadow-lg space-y-6 max-w-2xl mx-auto transition-all duration-300">
+                        <div class="space-y-2 border-b border-slate-100 dark:border-slate-700 pb-4">
+                            <h3 class="font-bold text-xl text-slate-900 dark:text-white flex items-center gap-2">
+                                <i data-lucide="clipboard-list" class="h-6 w-6 text-brand-500"></i> ANEXO II – Checklist Comercial (Vendas)
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Preencha o formulário e clique em enviar para disparar os dados completos ao e-mail da coordenação: <span class="font-semibold text-brand-500">danielsribeirovistel@gmail.com</span></p>
+                        </div>
+
+                        <form id="vendasChecklistForm" onsubmit="sendComercialForm(event)" class="space-y-4">
+                            <!-- Campos de Texto Identificação -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="space-y-1">
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Nome do Vendedor *</label>
+                                    <input type="text" id="form-vendedor-nome" required class="w-full p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg text-sm focus:ring-2 focus:ring-brand-500 outline-none" placeholder="Digite seu nome completo">
+                                </div>
+                                <div class="space-y-1">
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Nome do Cliente *</label>
+                                    <input type="text" id="form-cliente-nome" required class="w-full p-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg text-sm focus:ring-2 focus:ring-brand-500 outline-none" placeholder="Digite o nome do titular">
+                                </div>
+                            </div>
+
+                            <!-- Grade de Checklist de Itens Estilo Formulário -->
+                            <div class="space-y-2">
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Checklist Obrigatório de Vendas (Marque todos os conformes) *</label>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-800">
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-doc" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Documento válido</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-cpf" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">CPF válido</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-selfie" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Selfie válida</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-comp" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Comprovante válido</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-cont1" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Contato principal validado</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-cont2" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Contato secundário validado</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-fidel" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Fidelização confirmada</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-viab" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Viabilidade confirmada</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-contrato" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Contrato validado</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-prop" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs">Proporcional correto</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-watch" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs font-semibold text-brand-600 dark:text-brand-400">Ativação Watch</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-2 hover:bg-white dark:hover:bg-slate-800 rounded transition-colors cursor-pointer">
+                                        <input type="checkbox" id="item-indic" class="rounded text-brand-500 focus:ring-brand-500 h-4 w-4">
+                                        <span class="text-xs font-semibold text-brand-600 dark:text-brand-400">Abertura de Indicação Comercial</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Botões de Ação -->
+                            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                                <button type="submit" class="flex-1 px-5 py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 shadow-md transition-all">
+                                    <i data-lucide="mail" class="h-4 w-4"></i> Enviar Checklist por E-mail
+                                </button>
+                                <button type="button" onclick="copyComercialFormData()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-100 font-semibold text-sm rounded-xl flex items-center justify-center gap-2 transition-all">
+                                    <i data-lucide="copy" class="h-4 w-4"></i> Copiar Dados do Formulário
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- ANEXO III – ROTEIRO DE CONFIRMAÇÃO COM RECURSO DE COPIAR -->
                     <div id="anexo-roteiro" class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                            <h3 class="font-bold text-lg flex items-center gap-1.5"><i data-lucide="message-square" class="h-5 w-5 text-brand-500"></i> ANEXO II – Roteiro de Confirmação</h3>
+                            <h3 class="font-bold text-lg flex items-center gap-1.5"><i data-lucide="message-square" class="h-5 w-5 text-brand-500"></i> ANEXO III – Roteiro de Confirmação</h3>
                             <button onclick="copyRoteiro()" class="px-3 py-1.5 bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg flex items-center gap-1 transition-colors self-start sm:self-auto">
                                 <i data-lucide="copy" class="h-3.5 w-3.5"></i> Copiar Perguntas
                             </button>
@@ -1464,10 +1595,10 @@
                         </div>
                     </div>
 
-                    <!-- ANEXO III – MATRIZ DE PENDÊNCIA COM FILTRO ATIVO -->
+                    <!-- ANEXO IV – MATRIZ DE PENDÊNCIA COM FILTRO ATIVO -->
                     <div class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                            <h3 class="font-bold text-lg flex items-center gap-1.5"><i data-lucide="git-merge" class="h-5 w-5 text-brand-500"></i> ANEXO III – Matriz de Pendência & Ações</h3>
+                            <h3 class="font-bold text-lg flex items-center gap-1.5"><i data-lucide="git-merge" class="h-5 w-5 text-brand-500"></i> ANEXO IV – Matriz de Pendência & Ações</h3>
                             <!-- Filtros rápidos -->
                             <div class="flex gap-1.5">
                                 <button onclick="filterMatriz('todos')" id="filter-todos" class="px-2.5 py-1 text-xs font-semibold rounded bg-brand-500 text-white transition-all">Todos</button>
@@ -1636,7 +1767,7 @@
                 document.querySelectorAll('.sidebar-link').forEach(item => {
                     item.className = "sidebar-link flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-lg transition-colors";
                 });
-                link.className = "sidebar-link flex items-center gap-2 px-3 py-2 text-sm font-medium text-brand-600 bg-brand-50 dark:text-brand-400 dark:bg-brand-950/40 border-l-2 border-brand-500";
+                link.className = "sidebar-link flex items-center gap-2 px-3 py-2 text-sm font-medium text-brand-600 bg-brand-50 dark:text-brand-400 dark:bg-brand-955/40 border-l-2 border-brand-500";
             });
         });
 
@@ -1726,7 +1857,7 @@
             }, 3000);
         }
 
-        // Checklist logic
+        // Checklist logic (Anexo I)
         function updateProgress() {
             const checkboxes = document.querySelectorAll('#checklist-items input[type="checkbox"]');
             const total = checkboxes.length;
@@ -1756,7 +1887,86 @@
             showToast('Checklist reiniciado para nova auditoria!');
         }
 
-        // Copy script/roteiro questions
+        // Format and generate text of Anexo II
+        function getComercialFormData() {
+            const vendedor = document.getElementById('form-vendedor-nome').value || '[VENDEDOR NÃO INFORMADO]';
+            const cliente = document.getElementById('form-cliente-nome').value || '[CLIENTE NÃO INFORMADO]';
+            
+            const checks = [
+                { id: 'item-doc', label: 'Documento válido' },
+                { id: 'item-cpf', label: 'CPF válido' },
+                { id: 'item-selfie', label: 'Selfie válida' },
+                { id: 'item-comp', label: 'Comprovante válido' },
+                { id: 'item-cont1', label: 'Contato principal validado' },
+                { id: 'item-cont2', label: 'Contato secundário validado' },
+                { id: 'item-fidel', label: 'Fidelização confirmada' },
+                { id: 'item-viab', label: 'Viabilidade confirmada' },
+                { id: 'item-contrato', label: 'Contrato validado' },
+                { id: 'item-prop', label: 'Proporcional correto' },
+                { id: 'item-watch', label: 'Ativação Watch' },
+                { id: 'item-indic', label: 'Abertura da Indicação Comercial' }
+            ];
+
+            let itemsText = '';
+            checks.forEach(item => {
+                const isChecked = document.getElementById(item.id).checked;
+                itemsText += `- ${item.label}: ${isChecked ? 'CONFORME [X]' : 'NÃO VERIFICADO [ ]'}\n`;
+            });
+
+            const emailText = `CHECKLIST COMERCIAL - VISTEL TELECOM\n\n` +
+                              `Identificação:\n` +
+                              `- Vendedor: ${vendedor}\n` +
+                              `- Cliente: ${cliente}\n\n` +
+                              `STATUS DO CHECKLIST:\n` +
+                              itemsText + `\n` +
+                              `Enviado via Portal POP Vistel em: ${new Date().toLocaleDateString('pt-BR')} ${new Date().toLocaleTimeString('pt-BR')}`;
+            
+            return {
+                vendedor,
+                cliente,
+                text: emailText
+            };
+        }
+
+        // Send Anexo II data to mailto:danielsribeirovistel@gmail.com
+        function sendComercialForm(event) {
+            event.preventDefault();
+            const data = getComercialFormData();
+            
+            const recipient = "danielsribeirovistel@gmail.com";
+            const subject = encodeURIComponent(`Checklist Comercial Vendas - Vendedor: ${data.vendedor} (Cliente: ${data.cliente})`);
+            const body = encodeURIComponent(data.text);
+            
+            // Mailto trigger
+            window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+            showToast('Formulário gerado! Verifique seu cliente de e-mail.');
+        }
+
+        // Copy Anexo II form data to clipboard
+        function copyComercialFormData() {
+            const data = getComercialFormData();
+            
+            const textarea = document.createElement('textarea');
+            textarea.value = data.text;
+            textarea.style.position = 'fixed';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast('Dados do formulário comercial copiados com sucesso!');
+                } else {
+                    showToast('Erro ao copiar dados.', 'error');
+                }
+            } catch (err) {
+                showToast('Erro ao copiar dados.', 'error');
+            }
+            
+            document.body.removeChild(textarea);
+        }
+
+        // Copy script/roteiro questions (Anexo III)
         function copyRoteiro() {
             const textToCopy = `Perguntas Obrigatórias da Auditoria Vistel Telecom:
 1. O senhor(a) confirma a contratação do serviço?
@@ -1767,7 +1977,6 @@
 6. Confirma o endereço da instalação?
 7. Confirma ciência do primeiro vencimento?`;
 
-            // Using standard copy approach to ensure execution within iframes
             const textarea = document.createElement('textarea');
             textarea.value = textToCopy;
             textarea.style.position = 'fixed';
