@@ -67,7 +67,7 @@
                     </div>
                     <div>
                         <span class="text-xl font-bold tracking-tight text-brand-600 dark:text-brand-100">VISTEL TELECOM</span>
-                        <span class="hidden sm:inline-block ml-2 px-2 py-0.5 text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 rounded-full">POP Oficial v1.1</span>
+                        <span class="hidden sm:inline-block ml-2 px-2 py-0.5 text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 rounded-full">POP Oficial v1.0</span>
                     </div>
                 </div>
 
@@ -236,7 +236,7 @@
                         </p>
                         <div class="flex flex-wrap gap-4 mt-6 text-sm text-brand-100">
                             <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="h-4 w-4"></i> Vigência: Conforme revisão vigente</span>
-                            <span class="flex items-center gap-1.5"><i data-lucide="layers" class="h-4 w-4"></i> Versão: 1.1</span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="layers" class="h-4 w-4"></i> Versão: 1.0</span>
                             <span class="flex items-center gap-1.5"><i data-lucide="eye" class="h-4 w-4"></i> Uso Interno</span>
                         </div>
                     </div>
@@ -271,13 +271,13 @@
                                 </tr>
                                 <tr>
                                     <td class="p-3 font-medium text-slate-900 dark:text-white">Versão</td>
-                                    <td class="p-3">1.1</td>
+                                    <td class="p-3">1.0</td>
                                 </tr>
                                 <tr>
                                     <td class="p-3 font-medium text-slate-900 dark:text-white">Status</td>
                                     <td class="p-3">
                                         <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">
-                                            Implantado e Vigente
+                                            Em implantação
                                         </span>
                                     </td>
                                 </tr>
@@ -587,7 +587,7 @@
                                 <li>Garantir veracidade das informações;</li>
                                 <li>Garantir a ativação do app Watch, a não ativação gerará pendência;</li>
                                 <li>Garantir a abertura da indicação comercial (obrigatório abertura de indicação comercial, caso contrário será dado como pendência);</li>
-                                <li class="text-blue-600 dark:text-blue-400 font-semibold">Em casos de reativações e negociações para contratar, após a instalação ser bem sucedida e a taxa de instalação ser paga, o vendedor precisa obrigatoriamente abrir um ticket de "outros pedidos financeiro" para solicitar a suspensão dos débitos antigos.</li>
+                                <li class="text-blue-600 dark:text-blue-400 font-semibold">Em casos de reativações e negociações para contratar, após a instalação ser bem sucedida e a taxa de instalação ser paga, o vendedor precisa obrigatoriamente abrir um ticket de "outros pedidos financeiro" para solicitar a devia suspensão dos débitos antigos.</li>
                             </ul>
                         </div>
 
@@ -1035,6 +1035,9 @@
                         <div class="p-3 bg-slate-50 dark:bg-slate-900 border-l-4 border-slate-500 rounded">
                             <span class="font-bold">18.3 Validação Final:</span> A viabilidade comercial final poderá ser declarada nula ou invalidada pelo setor de COPE diretamente no endereço no momento da instalação física.
                         </div>
+                        <div class="p-3 bg-amber-50 dark:bg-slate-900/50 border-l-4 border-amber-500 rounded text-amber-950 dark:text-amber-300">
+                            <span class="font-bold">18.4 Obrigatoriedade de Localização Fixa:</span> É obrigatória a inclusão da localização fixa (GPS) do cliente na etapa do comercial. Essa informação é vital para que o processo de auditoria verifique com máxima precisão a real viabilidade de atendimento e conformidade do endereço.
+                        </div>
                     </div>
                 </section>
 
@@ -1464,6 +1467,10 @@
                             <label class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 cursor-pointer transition-colors border border-slate-100 dark:border-slate-800">
                                 <input type="checkbox" onchange="updateProgress()" class="rounded text-brand-500 focus:ring-brand-500 h-4.5 w-4.5">
                                 <span class="text-xs font-semibold">Viabilidade confirmada</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 cursor-pointer transition-colors border border-slate-100 dark:border-slate-800">
+                                <input type="checkbox" onchange="updateProgress()" class="rounded text-brand-500 focus:ring-brand-500 h-4.5 w-4.5">
+                                <span class="text-xs font-semibold">Localização fixa incluída</span>
                             </label>
                             <label class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 cursor-pointer transition-colors border border-slate-100 dark:border-slate-800">
                                 <input type="checkbox" onchange="updateProgress()" class="rounded text-brand-500 focus:ring-brand-500 h-4.5 w-4.5">
